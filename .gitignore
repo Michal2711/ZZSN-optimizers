@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Neptune logs
+.neptune/
+
+# Dane i foldery użytkowe
+content/
+.zsnn/
+
+# Systemowe i środowiskowe
+.DS_Store
+.env
+.venv/
+*.env
+
+# Pliki tymczasowe edytorów
+*.swp
+*.bak
+*.tmp
+*.log
+
+# VSCode i inne IDE
+.vscode/
+.idea/
