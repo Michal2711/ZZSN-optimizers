@@ -45,7 +45,7 @@ def objective(trial: optuna.Trial,
 
     learning_rate = trial.suggest_float("learning_rate", 1e-5, 1e-1, log=True)
     batch_size = trial.suggest_categorical("batch_size", [8, 16, 32])
-    num_epochs = trial.suggest_int("num_epochs", 1, 2)
+    num_epochs = trial.suggest_int("num_epochs", 1, 10)
     optimizer_params = {"lr": learning_rate}
 
     if hasattr(train_dataset, 'set_format'):
